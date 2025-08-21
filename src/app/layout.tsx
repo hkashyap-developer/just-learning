@@ -5,6 +5,7 @@ import Header from "@/components/custom/header/header";
 import Footer from "@/components/custom/footer/footer";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/custom/sidebar/app-sidebar";
+import {Sheet} from "@/components/custom/footer/sheet";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({
             <Header />
             <SidebarTrigger />
             {children}
+            <Sheet />
             <Footer />
           </body>
         </html>
